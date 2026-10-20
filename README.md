@@ -26,9 +26,9 @@ Brazil's public observatory for early-childhood policy: it tracks which states a
 
 **Hardest design calls**
 
-- **Map zoom:** clicking a municipality had to zoom in smoothly without people losing track of where they were in the state. Getting that transition to feel natural took more iterations than anything else on the site.
-- **One palette for map and interface:** the map needs clearly distinct colors for each plan status, but those colors also had to sit well with the rest of the UI. I built a single palette that works in both places instead of giving the map its own set.
-- **File gallery in the admin panel:** the team manages a growing library of reports, laws, decrees, and guides. Organizing that gallery so people can find and update documents quickly was the main design problem on the admin side.
+- **Map zoom:** instead of scaling one huge map, I used an SVG of Brazil plus a separate SVG for each state. Clicking a state swaps in that state's map, so its municipalities show up at a size you can actually read and click.
+- **One palette for map and interface:** I studied color theory to understand how each color group behaves, then built a single palette with enough contrast to tell plan statuses apart on the map while still matching the rest of the UI.
+- **File gallery in the admin panel:** the team manages a growing library of reports, laws, and guides. I grouped related files together: documents (DOCX and PDF) in one place, videos in another, images in another, so people find what they need without scanning one long list.
 
 ### Design systems in production
 
